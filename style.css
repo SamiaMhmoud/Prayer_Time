@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Allura&family=Babylonica&family=League+Spartan:wght@100;300;400;500;600;700;800;900&family=Tajawal:wght@300;400;500;700;800&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color:#0a0a40;
+    background-image: linear-gradient(45deg, rgb(0, 0, 76) , rgb(14, 72, 101));
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    font-family: 'Allura', cursive;
+    font-family: 'Babylonica', cursive;
+    font-family: 'League Spartan', sans-serif;
+    font-family: 'Tajawal', sans-serif;
+}
+
+.container {
+    padding: 0 100px;
+}
+.container header {
+    margin-bottom: 30px;
+    border-bottom: 2px solid #5cd0ff;
+}
+.date {
+    color: rgba(255, 255, 255, 0.784);
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.container .city {
+    font-size: 100px;
+    color: #fff;
+    font-weight: 400;
+}
+.container .prayer-times {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.container .prayer-times .card {
+    background:  #fff;
+    margin: 15px;
+    border-radius: 5px;
+    width: 180px;
+    text-align: center;
+    overflow: hidden;
+    color: #010153;
+}
+
+.container .prayer-times .card .name {
+    padding: 5px 0;
+    background: #5cd0ff;
+    font-size: 22px;
+}
+.container .prayer-times .card .time {
+    height: 120px;
+    line-height: 120px;
+    font-size: 45px;
+    font-weight: 500;
+}
+#citys-prayer {
+    text-align: center;
+    width: 250px;
+    padding: 10px 20px;
+    border-radius: 30px;
+    border: 3px solid #5cd0ff;
+    outline: none;
+    cursor: pointer;
+    font-size: 20px;
+    color: #010153;
+    font-family: 'Tajawal', sans-serif;
+    font-weight: 500;
+    display: block;
+    margin: 30px auto 0;
+}

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prayer Time</title>
+    <!-- <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body style="direction: rtl;">
+    <div class="container">
+        <!-- City Name + date -->
+        <header>
+            <h1 class="city"></h1>
+            <div class="date">
+                <span class="day"></span>
+                <span class="day-number"></span>
+                <span class="month"></span>
+                <span class="year"></span>
+            </div>
+        </header>
+        <div class="prayer-times">
+            <div class="card">
+                <h3 class="name">الفجر</h3>
+                <div class="time" data-prayer="Fajr"></div>
+            </div>
+            <div class="card">
+                <h3 class="name">الشروق</h3>
+                <div class="time" data-prayer="Sunrise"></div>
+            </div>
+            <div class="card">
+                <h3 class="name">الظهر</h3>
+                <div class="time" data-prayer="Dhuhr"></div>
+            </div>
+            <div class="card">
+                <h3 class="name">العصر</h3>
+                <div class="time"data-prayer="Asr"></div>
+            </div>
+            <div class="card">
+                <h3 class="name">المغرب</h3>
+                <div class="time"data-prayer="Sunset"></div>
+            </div>
+            <div class="card">
+                <h3 class="name">العشاء</h3>
+                <div class="time"data-prayer="Isha"></div>
+            </div>
+        </div>
+        <select name="city" id="citys-prayer">
+            <option disabled selected>اختر مدينة</option>
+            <option data-city="Makkah" data-country="SA">مكه المكرمة</option>
+            <option data-city="Al Madīnah" data-country="SA">المدينة المنورة</option>
+            <option data-city="Al Quds" data-country="PS">القدس</option>
+            <option data-city="Cairo" data-country="ُEG">القاهرة</option>
+            <option data-city="Ad Dawḩah" data-country="ُQA">الدوحة</option>
+            <option data-city="Dimashq" data-country="SY">دمشق</option>
+            <option data-city="Şanʻā’" data-country="YE">صنعاء</option>
+            <option data-city="Al Rebat" data-country="MA">الرباط</option>
+        </select>
+    </div>
+    <script src="./node_modules/axios/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
